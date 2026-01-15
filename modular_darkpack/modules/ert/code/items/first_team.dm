@@ -200,7 +200,7 @@
 /obj/item/ammo_box/vampire/f12g //DO NOT DISTRIBUTE NORMALLY
 	name = "ammo box (f12g)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER(modular_darkpack/modules/ert/icons/onfloor.dmi)
 	icon_state = "12box_frag"
 	ammo_type = /obj/item/ammo_casing/vampire/c12g/f12g
 	max_ammo = 40
@@ -210,8 +210,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	//worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER(modular_darkpack/modules/ert/icons/onfloor.dmi)
 	icon_state = "px66f"
 	inhand_icon_state = null
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
@@ -224,8 +223,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	//worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER(modular_darkpack/modules/ert/icons/onfloor.dmi)
 	icon_state = "px249f"
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
 	caliber = CALIBER_556
@@ -242,9 +240,8 @@
 /obj/item/ammo_box/magazine/mk23
 	name = "automatic pistol magazine (.45 ACP)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	onflooricon_state = "mk23_mag"
-	icon_state = "mk23"
+	ONFLOOR_ICON_HELPER(modular_darkpack/modules/ert/icons/onfloor.dmi)
+	icon_state = "mk23_mag"
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp
 	caliber = CALIBER_45
 	max_ammo = 12
