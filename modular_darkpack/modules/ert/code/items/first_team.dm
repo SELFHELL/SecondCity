@@ -32,6 +32,7 @@
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	inhand_icon_state = "fingerless"
+	icon_state = "ftgloves"
 	undyeable = TRUE
 
 
@@ -39,11 +40,13 @@
 	name = "First Team gloves"
 	desc = "Provides protection from the good, the bad and the ugly."
 	icon_state = "ftgloves"
-	armor_type = /datum/armor/first_team
+	body_parts_covered = HANDS
+	armor_type = /datum/armor/gloves_combat
 
 //------------HELMET------------
 
 /obj/item/clothing/head/response
+	icon_state = "fthelmet"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
@@ -61,6 +64,7 @@
 //------------ARMOR------------
 
 /obj/item/clothing/suit/response
+	icon_state = "ftuni"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
@@ -83,13 +87,17 @@
 	desc = "A strong looking, armoured-vest with a large '1' engraved onto the breast."
 	icon_state = "ftarmor"
 	armor_type = /datum/armor/first_team
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	clothing_traits = list(TRAIT_BRAWLING_KNOCKDOWN_BLOCKED)
 
 //------------SUIT------------
 
 /obj/item/clothing/under/response
 	desc = "Some clothes."
 	name = "clothes"
-	icon_state = "error"
+	icon_state = "ftuni"
 	has_sensor = NO_SENSORS
 	random_sensor = FALSE
 	can_adjust = FALSE
@@ -106,6 +114,7 @@
 	name = "First Team uniform"
 	desc = "A completely blacked out uniform with a large '1' symbol sewn onto the shoulder-pad."
 	icon_state = "ftuni"
+	armor_type = /datum/armor/clothing_under/security_head_of_security
 
 //------------Glasses------------
 
@@ -133,13 +142,13 @@
 	name = "green 5.56mm bullet casing"
 	desc = "A modified 5.56mm bullet casing."
 	caliber = CALIBER_556
-	projectile_type = /obj/projectile/beam/beam_rifle/vampire/vamp556mm/bale
+	projectile_type = /obj/projectile/bullet/darkpack/vamp556mm/bale
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "b556"
 	base_icon_state = "b556"
 
-/obj/projectile/beam/beam_rifle/vampire/vamp556mm/bale
+/obj/projectile/bullet/darkpack/vamp556mm/bale
 	armour_penetration = 50
 	damage = 45
 	var/bloodloss = 1
@@ -168,20 +177,20 @@
 	name = "Frag-12g shell casing"
 	desc = "A 12g explosive shell casing."
 	caliber = CALIBER_SHOTGUN
-	projectile_type = /obj/projectile/beam/beam_rifle/vampire/f12g
+	projectile_type = /obj/projectile/bullet/darkpack/f12g
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "f12"
 	base_icon_state = "f12"
 
-/obj/projectile/beam/beam_rifle/vampire/f12g
+/obj/projectile/bullet/darkpack/f12g
 	name = "12g explosive slug"
 	damage = 60
 	armour_penetration = 50
 	exposed_wound_bonus = 10
 	wound_bonus = 5
 
-/obj/projectile/beam/beam_rifle/vampire/f12g/on_hit(atom/target, blocked = 0, pierce_hit)
+/obj/projectile/bullet/darkpack/f12g/on_hit(atom/target, blocked = 0, pierce_hit)
 	..()
 	explosion(target, devastation_range = -1, light_impact_range = 2, explosion_cause = src)
 	return BULLET_ACT_HIT
@@ -295,8 +304,7 @@
 	slot_flags = 0
 	accepted_magazine_type = /obj/item/ammo_box/magazine/px249f
 	weapon_weight = WEAPON_HEAVY
-	burst_size = 5
-	fire_delay = 2
+	burst_size = 1
 	spread = 6
 	fire_sound = 'modular_darkpack/modules/ert/audio/m249fire.ogg'
 	rack_sound = 'modular_darkpack/modules/ert/audio/m249rack.ogg'
@@ -311,13 +319,13 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw/vamp/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
+	AddComponent(/datum/component/automatic_fire, 0.05 SECONDS)
 
 //------------Medical------------
 
 
 /obj/item/reagent_containers/hypospray/medipen/first
-	name = "Stimulant autoinjector"
+	name = "\improper Stimulant autoinjector"
 	desc = "Contains experimental combat drugs, vastly increasing your movement speed, reducing stuns, and disabling traumatic feedback for around five minutes. DO NOT USE TWICE IN A ROW"
 	icon = 'modular_darkpack/modules/ert/icons/medical.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
@@ -355,11 +363,6 @@
 	REMOVE_TRAIT(L, TRAIT_NOSOFTCRIT, type)
 	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, type)
 	..()
-
-///datum/reagent/medicine/vamp/ert/on_mob_life(mob/living/carbon/M)
-	//if(M.health < 50 && M.health > 0)
-
-	//M.AdjustAllImmobility(-60)
 
 
 
