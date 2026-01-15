@@ -32,7 +32,6 @@
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	inhand_icon_state = "ftgloves"
 	icon_state = "ftgloves"
 	undyeable = TRUE
 
@@ -49,6 +48,7 @@
 /obj/item/clothing/head/response
 	icon_state = "fthelmet"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
+	inhand_icon_state = null
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 
@@ -69,6 +69,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	inhand_icon_state = null
 
 	body_parts_covered = CHEST
 	cold_protection = CHEST|GROIN
@@ -87,6 +88,7 @@
 	name = "First Team Armoured Vest"
 	desc = "A strong looking, armoured-vest with a large '1' engraved onto the breast."
 	icon_state = "ftarmor"
+	inhand_icon_state = null
 	armor_type = /datum/armor/first_team
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -224,6 +226,7 @@
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
+	inhand_icon_state = null
 	icon_state = "px249f"
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
 	caliber = CALIBER_556
@@ -241,6 +244,7 @@
 	name = "automatic pistol magazine (.45 ACP)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
+	inhand_icon_state = null
 	icon_state = "mk23_mag"
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp
 	caliber = CALIBER_45
@@ -400,24 +404,7 @@
 	if(need_mob_update)
 		return UPDATE_MOB_HEALTH
 
-/obj/item/reagent_containers/hypospray/medipen/first
-	name = "\improper Stimulant autoinjector"
-	desc = "Contains experimental combat drugs, vastly increasing your movement speed, reducing stuns, and disabling traumatic feedback for around five minutes. DO NOT USE TWICE IN A ROW"
-	icon = 'modular_darkpack/modules/ert/icons/medical.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	icon_state = "fpen"
-	inhand_icon_state = "tbpen"
-	base_icon_state = "fpen"
-	volume = 100
-	amount_per_transfer_from_this = 50
-	list_reagents = list(/datum/reagent/medicine/vamp/ert = 100)
 
-/obj/item/reagent_containers/hypospray/medipen/first/update_icon_state()
-	. = ..()
-	if(reagents.total_volume >= volume)
-		icon_state = base_icon_state
-		return
-	icon_state = "[base_icon_state][(reagents.total_volume > 0) ? 1 : 0]"
 
 
 

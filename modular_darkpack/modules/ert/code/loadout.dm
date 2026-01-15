@@ -21,7 +21,6 @@
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
 		/obj/item/storage/medkit/darkpack/ifak = 1,
-		/obj/item/reagent_containers/hypospray/medipen/first = 1
 		)
 
 /datum/outfit/job/vampire/ert/pentex/exterminator
@@ -35,7 +34,6 @@
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
 		/obj/item/storage/medkit/darkpack/ifak = 1,
-		/obj/item/reagent_containers/hypospray/medipen/first = 1
 		)
 
 /datum/outfit/job/vampire/ert/pentex/specialist
@@ -49,7 +47,6 @@
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
 		/obj/item/storage/medkit/darkpack/ifak = 1,
-		/obj/item/reagent_containers/hypospray/medipen/first = 1
 		)
 
 /datum/outfit/job/vampire/ert/pentex/medic
@@ -63,6 +60,5 @@
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
 		/obj/item/storage/medkit/darkpack/ifak  = 1,
-		/obj/item/reagent_containers/hypospray/medipen/first = 1,
 		/obj/item/storage/medkit/darkpack/combat = 1
 		)
