@@ -15,7 +15,8 @@
 	implants = list(/obj/item/implant/explosive)
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/glock21=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/ammo_box/magazine/mk23/silver = 2,
 		/obj/item/ammo_box/vampire/c556/bale = 1,
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
@@ -28,7 +29,8 @@
 	belt = /obj/item/gun/ballistic/automatic/l6_saw/vamp
 	l_pocket = /obj/item/ammo_box/magazine/px249f
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/glock21=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/ammo_box/magazine/mk23/silver = 2,
 		/obj/item/ammo_box/vampire/c556/bale = 3,
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
@@ -41,7 +43,8 @@
 	belt = /obj/item/gun/ballistic/shotgun/vampire/px12r
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/glock21=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/ammo_box/magazine/mk23/silver = 2,
 		/obj/item/ammo_box/vampire/f12g = 2,
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,
@@ -54,7 +57,8 @@
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/glock21=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/ammo_box/magazine/mk23/silver = 2,
 		/obj/item/ammo_box/vampire/c556/bale = 1,
 		/obj/item/vamp/keys/pentex = 1,
 		/obj/item/grenade/frag = 3,

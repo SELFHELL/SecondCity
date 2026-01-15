@@ -15,7 +15,8 @@
 	desc = "Comfortable-looking shoes."
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	icon_state = "shoes"
+	icon_state = "ftboots"
+	inhand_icon_state = "ftboots"
 	gender = PLURAL
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 
@@ -31,7 +32,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	inhand_icon_state = "fingerless"
+	inhand_icon_state = "ftgloves"
 	icon_state = "ftgloves"
 	undyeable = TRUE
 
@@ -129,6 +130,7 @@
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	can_suppress = FALSE
+	inhand_icon_state = "px66f"
 	recoil = 2
 
 /obj/item/ammo_box/vampire/c556/bale //DONT EVER PUT THIS IN A MAP
@@ -208,9 +210,10 @@
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
+	//worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "px66f"
+	inhand_icon_state = null
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
 	caliber = CALIBER_556
 	max_ammo = 30
@@ -221,7 +224,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
+	//worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "px249f"
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
@@ -235,6 +238,45 @@
 	caliber = CALIBER_SHOTGUN
 	max_ammo = 8
 	masquerade_violating = FALSE
+
+/obj/item/ammo_box/magazine/mk23
+	name = "automatic pistol magazine (.45 ACP)"
+	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
+	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	onflooricon_state = "mk23_mag"
+	icon_state = "mk23"
+	ammo_type = /obj/item/ammo_casing/vampire/c45acp
+	caliber = CALIBER_45
+	max_ammo = 12
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+/obj/item/ammo_box/magazine/mk23/silver
+	name = "automatic pistol magazine (.45 ACP Silver)"
+	ammo_type = /obj/item/ammo_casing/vampire/c45acp/silver
+
+/obj/item/ammo_box/magazine/mk23/hp
+	name = "automatic pistol magazine (.45 ACP Silver)"
+	ammo_type = /obj/item/ammo_casing/vampire/c45acp/HP
+
+/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
+	name = "\improper Mark 23 SOCOM Pistol"
+	desc = "A specialized .45 ACP Pistol featuring an integrated supressor and laser sight"
+	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
+	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
+	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
+	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	icon_state = "mk23"
+	onflooricon_state = "mk23"
+	inhand_icon_state = "mk23"
+	w_class = WEIGHT_CLASS_SMALL
+	accepted_magazine_type = /obj/item/ammo_box/magazine/mk23
+	burst_size = 1
+	actions_types = list()
+	bolt_type = BOLT_TYPE_LOCKING
+	suppressed = SUPPRESSED_QUIET
+	can_suppress = FALSE
+	can_unsuppress = FALSE
+	fire_sound = 'modular_darkpack/modules/weapons/sounds/glock.ogg' //Doesnt matter when it's always using the supressed SFX
 
 /obj/item/gun/ballistic/automatic/response/px66f //DO NOT DISTRIBUTE IN MAPPING
 	name = "\improper PX66F Rifle"
@@ -252,6 +294,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/px66f
 	burst_size = 3
 	spread = 2
+	recoil = 1.5
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
 	mag_display = TRUE
@@ -319,10 +362,46 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw/vamp/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.05 SECONDS)
+	AddComponent(/datum/component/automatic_fire, 0.1 SECONDS)
 
 //------------Medical------------
 
+/datum/reagent/medicine/vamp/ert
+	name = "Experimental Drugs"
+	description = "Increases stun resistance and movement speed in addition to restoring minor damage and weakness. Overdose causes weakness and toxin damage."
+	color = "#13c563"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	var/healing = 5
+	overdose_threshold = 75
+
+/datum/reagent/medicine/vamp/ert/on_mob_metabolize(mob/living/affected_mob)
+	. = ..()
+	affected_mob.add_movespeed_mod_immunities(type, /datum/movespeed_modifier/damage_slowdown)
+	affected_mob.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
+	ADD_TRAIT(affected_mob, TRAIT_NOHARDCRIT, type)
+	ADD_TRAIT(affected_mob, TRAIT_NOSOFTCRIT, type)
+	ADD_TRAIT(affected_mob, TRAIT_NO_DAMAGE_OVERLAY, type)
+	ADD_TRAIT(affected_mob, TRAIT_SLEEPIMMUNE, type)
+
+/datum/reagent/medicine/vamp/ert/on_mob_end_metabolize(mob/living/affected_mob)
+	. = ..()
+	affected_mob.remove_movespeed_mod_immunities(type, /datum/movespeed_modifier/damage_slowdown)
+	affected_mob.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
+	REMOVE_TRAIT(affected_mob, TRAIT_NOHARDCRIT, type)
+	REMOVE_TRAIT(affected_mob, TRAIT_NOSOFTCRIT, type)
+	REMOVE_TRAIT(affected_mob, TRAIT_NO_DAMAGE_OVERLAY, type)
+	REMOVE_TRAIT(affected_mob, TRAIT_SLEEPIMMUNE, type)
+
+
+/datum/reagent/medicine/vamp/ert/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+	. = ..()
+	var/need_mob_update
+	need_mob_update = affected_mob.adjust_tox_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_biotype = affected_biotype)
+	need_mob_update += affected_mob.adjust_oxy_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_biotype = affected_biotype, required_respiration_type = affected_respiration_type)
+	need_mob_update += affected_mob.adjust_brute_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
+	need_mob_update += affected_mob.adjust_fire_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
+	if(need_mob_update)
+		return UPDATE_MOB_HEALTH
 
 /obj/item/reagent_containers/hypospray/medipen/first
 	name = "\improper Stimulant autoinjector"
@@ -343,26 +422,7 @@
 		return
 	icon_state = "[base_icon_state][(reagents.total_volume > 0) ? 1 : 0]"
 
-/datum/reagent/medicine/vamp/ert
-	name = "Experimental Drugs"
-	description = "Increases stun resistance and movement speed in addition to restoring minor damage and weakness. Overdose causes weakness and toxin damage."
-	color = "#13c563"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	overdose_threshold = 75
 
-/datum/reagent/medicine/vamp/ert/on_mob_metabolize(mob/living/L)
-	..()
-	L.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
-	ADD_TRAIT(L, TRAIT_NOHARDCRIT, type)
-	ADD_TRAIT(L, TRAIT_NOSOFTCRIT, type)
-	ADD_TRAIT(L, TRAIT_SLEEPIMMUNE, type)
-
-/datum/reagent/medicine/vamp/ert/on_mob_end_metabolize(mob/living/L)
-	L.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
-	REMOVE_TRAIT(L, TRAIT_NOHARDCRIT, type)
-	REMOVE_TRAIT(L, TRAIT_NOSOFTCRIT, type)
-	REMOVE_TRAIT(L, TRAIT_SLEEPIMMUNE, type)
-	..()
 
 
 
