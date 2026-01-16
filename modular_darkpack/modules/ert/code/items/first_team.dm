@@ -129,7 +129,6 @@
 /obj/item/gun/ballistic/automatic/response
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	can_suppress = FALSE
 	inhand_icon_state = "px66f"
