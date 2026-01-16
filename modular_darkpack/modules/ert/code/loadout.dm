@@ -25,10 +25,10 @@
 
 /datum/outfit/job/vampire/ert/pentex/exterminator
 	name = "First Team Exterminator"
-	belt = /obj/item/gun/ballistic/automatic/l6_saw/vamp
+	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
 	l_pocket = /obj/item/ammo_box/magazine/px249f
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/automatic/l6_saw/vamp=1,
 		/obj/item/ammo_box/magazine/mk23/silver = 2,
 		/obj/item/ammo_box/vampire/c556/bale = 3,
 		/obj/item/vamp/keys/pentex = 1,
@@ -38,10 +38,10 @@
 
 /datum/outfit/job/vampire/ert/pentex/specialist
 	name = "First Team Specialist"
-	belt = /obj/item/gun/ballistic/shotgun/vampire/px12r
+	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/shotgun/vampire/px12r=1,
 		/obj/item/ammo_box/magazine/mk23/silver = 2,
 		/obj/item/ammo_box/vampire/f12g = 2,
 		/obj/item/vamp/keys/pentex = 1,

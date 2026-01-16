@@ -16,7 +16,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	icon_state = "ftboots"
-	inhand_icon_state = "ftboots"
+	inhand_icon_state = null
 	gender = PLURAL
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 
@@ -285,7 +285,6 @@
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "px66f"
 	inhand_icon_state = "px66f"
@@ -313,13 +312,11 @@
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	icon_state = "px12r"
 	inhand_icon_state = "px12r"
-	worn_icon_state = "px12r"
 	recoil = 3
 	fire_delay = 6
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/px12r
