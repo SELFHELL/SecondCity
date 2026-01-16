@@ -344,6 +344,7 @@
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
 	slot_flags = 0
+	pin = /obj/item/firing_pin
 	accepted_magazine_type = /obj/item/ammo_box/magazine/px249f
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
