@@ -129,7 +129,7 @@
 /obj/item/gun/ballistic/automatic/response
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_guns.dmi'
+	worn_icon = 'icons/mob/clothing/belt_mirror.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	can_suppress = FALSE
 	inhand_icon_state = "px66f"
@@ -285,6 +285,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
+	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_guns.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "px66f"
 	inhand_icon_state = "px66f"
