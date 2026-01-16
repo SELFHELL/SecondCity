@@ -352,10 +352,14 @@
 
 /obj/item/gun/ballistic/automatic/l6_saw/vamp/update_icon_state()
 	. = ..()
+	if(item_flags & ACTIVE_WORLD_ICON)
+		return
 	inhand_icon_state = "[base_icon_state][magazine ? "mag":"nomag"]"
 
 /obj/item/gun/ballistic/automatic/l6_saw/vamp/update_overlays()
 	. = ..()
+	if(item_flags & ACTIVE_WORLD_ICON)
+		return
 	. += "px249f_door_[cover_open ? "open" : "closed"]"
 
 /obj/item/gun/ballistic/automatic/l6_saw/vamp/Initialize(mapload)
