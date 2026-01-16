@@ -1,5 +1,0 @@
-author: "dwinters99"
-delete-after: True
-changes:
-  - code_imp: "two additional levels of fog density added to effects.dm"
-  - map: "lots of updatepath fixes"
