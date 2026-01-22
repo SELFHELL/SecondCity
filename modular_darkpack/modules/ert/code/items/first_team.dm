@@ -111,7 +111,7 @@
 
 /obj/item/clothing/under/response/Initialize()
 	. = ..()
-	AddComponent(/datum/component/selling, 10, "undersuit", FALSE)
+	AddComponent(/datum/component/selling, 100, "undersuit", FALSE)
 
 /obj/item/clothing/under/response/firstteam_uniform
 	name = "First Team uniform"
