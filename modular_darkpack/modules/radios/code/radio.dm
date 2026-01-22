@@ -19,7 +19,7 @@
 
 /obj/item/radio/headset/darkpack/pmc
 	name = "military radio"
-	radio_network = NETWORK_MILITARY
+	radio_network = NETWORK_ENDRON
 
 /obj/item/radio/headset/darkpack/pmc/Initialize()
 	. = ..()

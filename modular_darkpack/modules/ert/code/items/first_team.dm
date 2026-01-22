@@ -1,16 +1,16 @@
 //------------EQUIPMENT------------
 /datum/armor/first_team
-	melee = 80
-	bullet = 80
-	laser = 80
-	energy = 80
-	fire = 80
-	bomb = 80
-	acid = 80
-	wound = 80
+	melee = 70
+	bullet = 70
+	laser = 70
+	energy = 70
+	fire = 70
+	bomb = 70
+	acid = 70
+	wound = 70
 
 //------------SHOES------------
-/obj/item/clothing/shoes/response
+/obj/item/clothing/shoes/darkpack
 	name = "shoes"
 	desc = "Comfortable-looking shoes."
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
@@ -21,14 +21,14 @@
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 
 
-/obj/item/clothing/shoes/response/firstteam
+/obj/item/clothing/shoes/darkpack/firstteam
 	name = "first-team boots"
 	desc = "Pitch-black boots with hard, industrial laces."
 	icon_state = "ftboots"
 
 //------------GLOVES------------
 
-/obj/item/clothing/gloves/response
+/obj/item/clothing/gloves/darkpack
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
@@ -36,7 +36,7 @@
 	undyeable = TRUE
 
 
-/obj/item/clothing/gloves/response/firstteam
+/obj/item/clothing/gloves/darkpack/firstteam
 	name = "First Team gloves"
 	desc = "Provides protection from the good, the bad and the ugly."
 	icon_state = "ftgloves"
@@ -45,14 +45,14 @@
 
 //------------HELMET------------
 
-/obj/item/clothing/head/response
+/obj/item/clothing/head/darkpack
 	icon_state = "fthelmet"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	inhand_icon_state = null
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 
-/obj/item/clothing/head/response/firstteam_helmet
+/obj/item/clothing/head/darkpack/firstteam_helmet
 	name = "First Team helmet"
 	desc = "A black helmet with two, green-glowing eye-pieces that seem to stare through your soul."
 	icon_state = "fthelmet"
@@ -64,7 +64,7 @@
 
 //------------ARMOR------------
 
-/obj/item/clothing/suit/response
+/obj/item/clothing/suit/darkpack
 	icon_state = "ftuni"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
@@ -79,12 +79,12 @@
 	max_integrity = 250
 	resistance_flags = NONE
 
-/obj/item/clothing/suit/response/Initialize()
+/obj/item/clothing/suit/darkpack/Initialize()
 	. = ..()
 	AddComponent(/datum/component/selling, 15, "suit", FALSE)
 
 
-/obj/item/clothing/suit/response/firstteam_armor
+/obj/item/clothing/suit/darkpack/firstteam_armor
 	name = "First Team Armoured Vest"
 	desc = "A strong looking, armoured-vest with a large '1' engraved onto the breast."
 	icon_state = "ftarmor"
@@ -97,7 +97,7 @@
 
 //------------SUIT------------
 
-/obj/item/clothing/under/response
+/obj/item/clothing/under/darkpack
 	desc = "Some clothes."
 	name = "clothes"
 	icon_state = "ftuni"
@@ -113,7 +113,7 @@
 	. = ..()
 	AddComponent(/datum/component/selling, 10, "undersuit", FALSE)
 
-/obj/item/clothing/under/response/firstteam_uniform
+/obj/item/clothing/under/darkpack/firstteam_uniform
 	name = "First Team uniform"
 	desc = "A completely blacked out uniform with a large '1' symbol sewn onto the shoulder-pad."
 	icon_state = "ftuni"
@@ -124,18 +124,8 @@
 /obj/item/clothing/glasses/night/vamp/thermal
 	vision_flags = SEE_MOBS
 
-//------------Weapons------------
-
-/obj/item/gun/ballistic/automatic/response
-	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
-	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	worn_icon = 'icons/mob/clothing/belt_mirror.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	can_suppress = FALSE
-	inhand_icon_state = "px66f"
-	recoil = 2
-
-/obj/item/ammo_box/vampire/c556/bale //DONT EVER PUT THIS IN A MAP
+//------------Weapons------------/obj/item/ammo_casing/vampire/c12gvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+/obj/item/ammo_box/darkpack/c556/bale //DONT EVER PUT THIS IN A MAP
 	name = "balefire ammo box (5.56)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
@@ -199,7 +189,7 @@
 	explosion(target, devastation_range = -1, light_impact_range = 2, explosion_cause = src)
 	return BULLET_ACT_HIT
 
-/obj/item/ammo_box/vampire/f12g //DO NOT DISTRIBUTE NORMALLY
+/obj/item/ammo_box/darkpack/f12g //DO NOT DISTRIBUTE NORMALLY
 	name = "ammo box (f12g)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
@@ -220,7 +210,7 @@
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
-/obj/item/ammo_box/magazine/px249f
+/obj/item/ammo_box/magazine/darkpack/px249f
 	name = "PX249F box magazine (5.56mm)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
@@ -240,7 +230,7 @@
 	max_ammo = 8
 	masquerade_violating = FALSE
 
-/obj/item/ammo_box/magazine/mk23
+/obj/item/ammo_box/magazine/darkpack/mk23
 	name = "automatic pistol magazine (.45 ACP)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
@@ -251,11 +241,11 @@
 	max_ammo = 12
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
-/obj/item/ammo_box/magazine/mk23/silver
+/obj/item/ammo_box/magazine/darkpack/mk23/silver
 	name = "automatic pistol magazine (.45 ACP Silver)"
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp/silver
 
-/obj/item/ammo_box/magazine/mk23/hp
+/obj/item/ammo_box/magazine/darkpack/mk23/hp
 	name = "automatic pistol magazine (.45 ACP Silver)"
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp/HP
 
@@ -270,7 +260,7 @@
 	onflooricon_state = "mk23"
 	inhand_icon_state = "mk23"
 	w_class = WEIGHT_CLASS_SMALL
-	accepted_magazine_type = /obj/item/ammo_box/magazine/mk23
+	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/mk23
 	burst_size = 1
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
@@ -279,7 +269,7 @@
 	can_unsuppress = FALSE
 	fire_sound = 'modular_darkpack/modules/weapons/sounds/glock.ogg' //Doesnt matter when it's always using the supressed SFX
 
-/obj/item/gun/ballistic/automatic/response/px66f //DO NOT DISTRIBUTE IN MAPPING
+/obj/item/gun/ballistic/automatic/darkpack/px66f //DO NOT DISTRIBUTE IN MAPPING
 	name = "\improper PX66F Rifle"
 	desc = "A three-round burst 5.56 death machine, with a Spiral brand below the barrel."
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
@@ -299,15 +289,16 @@
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
 	mag_display = TRUE
+	can_suppress = FALSE
 	fire_sound = 'modular_darkpack/modules/ert/audio/silenced_rifle.ogg'
 	masquerade_violating = TRUE
 
-/obj/item/gun/ballistic/automatic/response/px66f/Initialize()
+/obj/item/gun/ballistic/automatic/darkpack/px66f/Initialize()
 	. = ..()
 	AddComponent(/datum/component/selling, 350, "aug", FALSE)
 	AddComponent(/datum/component/automatic_fire, 0.5 SECONDS)
 
-/obj/item/gun/ballistic/shotgun/vampire/px12r  //DONT DISTRIBUTE IN MAPPING
+/obj/item/gun/ballistic/shotgun/darkpack/px12r  //DONT DISTRIBUTE IN MAPPING
 	name = "\improper PX12R Breaching Shotgun"
 	desc = "A highly modified 12G Shotgun designed to fire Frag-12 explosive breaching rounds"
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
@@ -330,7 +321,7 @@
 	inhand_y_dimension = 32
 
 
-/obj/item/gun/ballistic/automatic/l6_saw/vamp
+/obj/item/gun/ballistic/automatic/l6_saw/darkpack
 	name = "\improper PX249F Light Machine Gun"
 	desc = "A modified M249 Machine Gun with an engraving of a Hydra on the grip"
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
@@ -345,26 +336,26 @@
 	show_bolt_icon = FALSE
 	slot_flags = 0
 	pin = /obj/item/firing_pin
-	accepted_magazine_type = /obj/item/ammo_box/magazine/px249f
+	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/px249f
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
 	spread = 6
 	fire_sound = 'modular_darkpack/modules/ert/audio/m249fire.ogg'
 	rack_sound = 'modular_darkpack/modules/ert/audio/m249rack.ogg'
 
-/obj/item/gun/ballistic/automatic/l6_saw/vamp/update_icon_state()
+/obj/item/gun/ballistic/automatic/l6_saw/darkpack/update_icon_state()
 	. = ..()
 	if(item_flags & ACTIVE_WORLD_ICON)
 		return
 	inhand_icon_state = "[base_icon_state][magazine ? "mag":"nomag"]"
 
-/obj/item/gun/ballistic/automatic/l6_saw/vamp/update_overlays()
+/obj/item/gun/ballistic/automatic/l6_saw/darkpack/update_overlays()
 	. = ..()
 	if(item_flags & ACTIVE_WORLD_ICON)
 		return
 	. += "px249f_door_[cover_open ? "open" : "closed"]"
 
-/obj/item/gun/ballistic/automatic/l6_saw/vamp/Initialize(mapload)
+/obj/item/gun/ballistic/automatic/l6_saw/darkpack/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/automatic_fire, 0.1 SECONDS)
 
