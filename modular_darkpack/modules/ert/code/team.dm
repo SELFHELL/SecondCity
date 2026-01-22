@@ -1,4 +1,5 @@
-/datum/ert/wod
+/datum/ert/darkpack
+	abstract_type = /datum/ert/darkpack
 
 /datum/ert/wod/swat
 //TODO: Get the SWAT Icons from Bomby & reimplement SWAT using the normal ert system
