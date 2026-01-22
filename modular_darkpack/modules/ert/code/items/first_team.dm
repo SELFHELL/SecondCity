@@ -157,8 +157,7 @@
 	damage = 45
 	var/bloodloss = 1
 
-// DARKPACK TODO - GAROU
-/* /obj/projectile/beam/beam_rifle/vampire/vamp556mm/bale/on_hit(atom/target, blocked = FALSE)
+/obj/projectile/beam/beam_rifle/vampire/vamp556mm/bale/on_hit(atom/target, blocked = FALSE)
 	if(iskindred(target) || isghoul(target))
 		var/mob/living/carbon/human/H = target
 		if(H.bloodpool == 0)
@@ -168,6 +167,8 @@
 		H.bloodpool = max(H.bloodpool - bloodloss, 0)
 		playsound(H, 'modular_tfn/modules/first_team/audio/balefire.ogg', rand(10,15), TRUE)
 		to_chat(H, span_warning("green flames errupt from the bullets impact, boiling your blood"))
+// DARKPACK TODO - GAROU
+/* 
 	if(iswerewolf(target) || isgarou(target))
 		var/mob/living/carbon/M = target
 		if(M.auspice.gnosis)
