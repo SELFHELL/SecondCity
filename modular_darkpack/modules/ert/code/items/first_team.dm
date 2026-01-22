@@ -81,7 +81,7 @@
 
 /obj/item/clothing/suit/response/Initialize()
 	. = ..()
-	AddComponent(/datum/component/selling, 15, "suit", FALSE)
+	AddComponent(/datum/component/selling, 200, "suit", FALSE)
 
 
 /obj/item/clothing/suit/response/firstteam_armor
