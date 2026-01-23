@@ -310,7 +310,6 @@
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	worn_icon_state = null
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	icon_state = "px12r"
