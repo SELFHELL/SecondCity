@@ -149,7 +149,7 @@
 	var/bloodloss = 1
 
 /obj/projectile/bullet/darkpack/vamp556mm/bale/on_hit(atom/target, blocked = 0, pierce_hit)
-	..()
+	. = ..()
 	if(iskindred(target) || isghoul(target))
 		var/mob/living/carbon/human/H = target
 		if(H.bloodpool == 0)
@@ -265,6 +265,8 @@
 	w_class = WEIGHT_CLASS_SMALL
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/mk23
 	burst_size = 1
+	recoil = 0
+	projectile_damage_multiplier = 1.3
 	actions_types = list()
 	bolt_type = BOLT_TYPE_LOCKING
 	suppressed = SUPPRESSED_QUIET
@@ -308,7 +310,7 @@
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
-	worn_icon_state = "gun"
+	worn_icon_state = null
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	icon_state = "px12r"
