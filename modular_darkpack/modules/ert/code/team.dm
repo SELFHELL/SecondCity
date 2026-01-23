@@ -14,6 +14,8 @@
 	polldesc = "an elite FIRST Team"
 
 /datum/ert/wod/pentex/budget
+	leader_role = /datum/antagonist/ert/wod/pentex/budget_leader
+	roles = list(/datum/antagonist/ert/wod/pentex/budget_intern, /datum/antagonist/ert/wod/pentex/budget_medic)
 	rename_team = "First Team" //For when you need a death-squad on a budget
 	mission = "Remove all hostile anomolous entities"
-	polldesc = "an 'elite' FIRST Team"
+	polldesc = "an 'elite' FIRST Team, some executive wants to really cut costs here"

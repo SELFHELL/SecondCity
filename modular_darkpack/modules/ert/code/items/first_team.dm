@@ -25,6 +25,7 @@
 	name = "first-team boots"
 	desc = "Pitch-black boots with hard, industrial laces."
 	icon_state = "ftboots"
+	armor_type = /datum/armor/shoes_jackboots
 
 //------------GLOVES------------
 
@@ -98,8 +99,8 @@
 //------------SUIT------------
 
 /obj/item/clothing/under/darkpack
-	desc = "Some clothes."
-	name = "clothes"
+	name = "First Team uniform"
+	desc = "A completely blacked out uniform with a large '1' symbol sewn onto the shoulder-pad."
 	icon_state = "ftuni"
 	has_sensor = NO_SENSORS
 	random_sensor = FALSE
@@ -248,7 +249,7 @@
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp/silver
 
 /obj/item/ammo_box/magazine/darkpack/mk23/hp
-	name = "automatic pistol magazine (.45 ACP Silver)"
+	name = "automatic pistol magazine (.45 ACP HP)"
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp/HP
 
 /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
@@ -307,6 +308,7 @@
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	worn_icon_state = "gun"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 	icon_state = "px12r"

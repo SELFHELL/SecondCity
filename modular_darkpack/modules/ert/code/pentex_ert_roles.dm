@@ -18,3 +18,17 @@
 	outfit = /datum/outfit/job/vampire/ert/pentex/specialist
 	role = "Specialist"
 
+/datum/antagonist/ert/wod/pentex/budget_leader
+	name = "Evaluation Officer"
+	outfit = /datum/outfit/job/vampire/ert/pentex_budget
+	role = "Evaluation Officer"
+
+/datum/antagonist/ert/wod/pentex/budget_intern
+	name = "Unpaid Intern"
+	outfit = /datum/outfit/job/vampire/ert/pentex_budget/intern
+	role = "Intern"
+
+/datum/antagonist/ert/wod/pentex/budget_medic
+	name = "Unpaid Intern Medic"
+	outfit = /datum/outfit/job/vampire/ert/pentex_budget/medic
+	role = "Medical Intern"
