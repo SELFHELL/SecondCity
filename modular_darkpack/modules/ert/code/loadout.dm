@@ -93,7 +93,7 @@
 	back = /obj/item/storage/backpack/satchel
 	glasses = /obj/item/clothing/glasses/sunglasses
 	head = /obj/item/clothing/head/vampire/pentex_yellowhardhat
-	r_hand /obj/item/gun/ballistic/shotgun/vampire
+	r_hand = /obj/item/gun/ballistic/shotgun/vampire
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/storage/medkit/darkpack/standard = 1,
