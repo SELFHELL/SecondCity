@@ -367,44 +367,7 @@
 	AddComponent(/datum/component/automatic_fire, 0.1 SECONDS)
 
 //------------Medical------------
-
-/datum/reagent/medicine/vamp/ert
-	name = "Experimental Drugs"
-	description = "Increases stun resistance and movement speed in addition to restoring minor damage and weakness. Overdose causes weakness and toxin damage."
-	color = "#13c563"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
-	var/healing = 5
-	overdose_threshold = 75
-
-/datum/reagent/medicine/vamp/ert/on_mob_metabolize(mob/living/affected_mob)
-	. = ..()
-	affected_mob.add_movespeed_mod_immunities(type, /datum/movespeed_modifier/damage_slowdown)
-	affected_mob.add_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
-	ADD_TRAIT(affected_mob, TRAIT_NOHARDCRIT, type)
-	ADD_TRAIT(affected_mob, TRAIT_NOSOFTCRIT, type)
-	ADD_TRAIT(affected_mob, TRAIT_NO_DAMAGE_OVERLAY, type)
-	ADD_TRAIT(affected_mob, TRAIT_SLEEPIMMUNE, type)
-
-/datum/reagent/medicine/vamp/ert/on_mob_end_metabolize(mob/living/affected_mob)
-	. = ..()
-	affected_mob.remove_movespeed_mod_immunities(type, /datum/movespeed_modifier/damage_slowdown)
-	affected_mob.remove_movespeed_modifier(/datum/movespeed_modifier/reagent/stimulants)
-	REMOVE_TRAIT(affected_mob, TRAIT_NOHARDCRIT, type)
-	REMOVE_TRAIT(affected_mob, TRAIT_NOSOFTCRIT, type)
-	REMOVE_TRAIT(affected_mob, TRAIT_NO_DAMAGE_OVERLAY, type)
-	REMOVE_TRAIT(affected_mob, TRAIT_SLEEPIMMUNE, type)
-
-
-/datum/reagent/medicine/vamp/ert/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
-	. = ..()
-	var/need_mob_update
-	need_mob_update = affected_mob.adjust_tox_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_biotype = affected_biotype)
-	need_mob_update += affected_mob.adjust_oxy_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_biotype = affected_biotype, required_respiration_type = affected_respiration_type)
-	need_mob_update += affected_mob.adjust_brute_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
-	need_mob_update += affected_mob.adjust_fire_loss(-healing * REM * seconds_per_tick, updating_health = FALSE, required_bodytype = affected_bodytype)
-	if(need_mob_update)
-		return UPDATE_MOB_HEALTH
-
+//To be done at a later date
 
 
 
