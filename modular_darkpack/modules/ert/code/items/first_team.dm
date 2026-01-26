@@ -18,7 +18,7 @@
 	icon_state = "ftboots"
 	inhand_icon_state = null
 	gender = PLURAL
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 
 
 /obj/item/clothing/shoes/darkpack/firstteam
