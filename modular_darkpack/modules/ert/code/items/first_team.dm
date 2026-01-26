@@ -38,7 +38,7 @@
 
 
 /obj/item/clothing/gloves/darkpack/firstteam
-	name = "First Team gloves"
+	name = "\improper First Team gloves"
 	desc = "Provides protection from the good, the bad and the ugly."
 	icon_state = "ftgloves"
 	body_parts_covered = HANDS
