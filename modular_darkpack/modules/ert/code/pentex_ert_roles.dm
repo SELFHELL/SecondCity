@@ -1,34 +1,34 @@
-/datum/antagonist/ert/wod/pentex/leader
+/datum/antagonist/ert/darkpack/pentex/leader
 	name = "Squad Leader"
 	outfit = /datum/outfit/job/vampire/ert/pentex
 	role = "Sergeant"
 
-/datum/antagonist/ert/wod/pentex/medic
+/datum/antagonist/ert/darkpack/pentex/medic
 	name = "Field Medic"
 	outfit = /datum/outfit/job/vampire/ert/pentex/medic
 	role = "Field Medic"
 
-/datum/antagonist/ert/wod/pentex/exterminator
+/datum/antagonist/ert/darkpack/pentex/exterminator
 	name = "Exterminator"
 	outfit = /datum/outfit/job/vampire/ert/pentex/exterminator
 	role = "Exterminator"
 
-/datum/antagonist/ert/wod/pentex/specialist
+/datum/antagonist/ert/darkpack/pentex/specialist
 	name = "Breaching Specialist"
 	outfit = /datum/outfit/job/vampire/ert/pentex/specialist
 	role = "Specialist"
 
-/datum/antagonist/ert/wod/pentex/budget_leader
+/datum/antagonist/ert/darkpack/pentex/budget_leader
 	name = "Evaluation Officer"
 	outfit = /datum/outfit/job/vampire/ert/pentex_budget
 	role = "Evaluation Officer"
 
-/datum/antagonist/ert/wod/pentex/budget_intern
+/datum/antagonist/ert/darkpack/pentex/budget_intern
 	name = "Unpaid Intern"
 	outfit = /datum/outfit/job/vampire/ert/pentex_budget/intern
 	role = "Intern"
 
-/datum/antagonist/ert/wod/pentex/budget_medic
+/datum/antagonist/ert/darkpack/pentex/budget_medic
 	name = "Unpaid Intern Medic"
 	outfit = /datum/outfit/job/vampire/ert/pentex_budget/medic
 	role = "Medical Intern"

@@ -4,7 +4,7 @@
 	uniform = /obj/item/clothing/under/darkpack/firstteam_uniform
 	gloves = /obj/item/clothing/gloves/darkpack/firstteam
 	mask = /obj/item/clothing/mask/vampire/balaclava
-	glasses = /obj/item/clothing/glasses/night/vamp/thermal
+	glasses = /obj/item/clothing/glasses/night/thermal
 	r_pocket = /obj/item/flashlight
 	l_pocket = /obj/item/ammo_box/magazine/px66f
 	shoes = /obj/item/clothing/shoes/darkpack/firstteam
@@ -15,7 +15,7 @@
 	implants = list(/obj/item/implant/explosive)
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/silver = 2,
 		/obj/item/ammo_box/darkpack/c556/bale = 1,
 		/obj/item/vamp/keys/pentex = 1,
@@ -25,7 +25,7 @@
 
 /datum/outfit/job/vampire/ert/pentex/exterminator
 	name = "First Team Exterminator"
-	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
+	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom
 	l_pocket = /obj/item/ammo_box/magazine/darkpack/px249f
 	r_hand = /obj/item/gun/ballistic/automatic/l6_saw/darkpack
 	backpack_contents = list(
@@ -38,7 +38,7 @@
 
 /datum/outfit/job/vampire/ert/pentex/specialist
 	name = "First Team Specialist"
-	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
+	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom
 	r_hand = /obj/item/gun/ballistic/shotgun/darkpack/px12r
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
@@ -54,7 +54,7 @@
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/px66f = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/silver = 2,
 		/obj/item/ammo_box/darkpack/c556/bale = 1,
 		/obj/item/vamp/keys/pentex = 1,
@@ -67,7 +67,7 @@
 
 /datum/outfit/job/vampire/ert/pentex_budget
 	name = "First Team Squad Leader" //the singular competent guy on the team
-	glasses = /obj/item/clothing/glasses/night/vamp/thermal
+	glasses = /obj/item/clothing/glasses/night/thermal
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	uniform = /obj/item/clothing/under/vampire/pentex_suit
 	gloves = /obj/item/clothing/gloves/vampire/work
@@ -80,7 +80,7 @@
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/storage/medkit/darkpack/ifak = 1,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/silver = 2,
 		/obj/item/ammo_box/magazine/darkpack/c46pdw/ext = 4,
 		)
@@ -99,7 +99,7 @@
 		/obj/item/storage/medkit/darkpack/standard = 1,
 		/obj/item/ammo_box/darkpack/c12g = 1,
 		/obj/item/ammo_box/darkpack/c12g/buck = 1,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/hp = 2,
 		/obj/item/clipboard = 1,
 		)
@@ -118,7 +118,7 @@
 	backpack_contents = list(
 		/obj/item/storage/medkit/darkpack/advanced = 1,
 		/obj/item/ammo_box/magazine/darkpack556/hunt = 3,
-		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom=1,
+		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/hp = 2,
 		/obj/item/clipboard = 1,
 		)

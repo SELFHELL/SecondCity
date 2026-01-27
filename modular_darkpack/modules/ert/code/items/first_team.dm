@@ -122,7 +122,7 @@
 
 //------------Glasses------------
 
-/obj/item/clothing/glasses/night/vamp/thermal
+/obj/item/clothing/glasses/night/thermal
 	vision_flags = SEE_MOBS
 
 //------------Weapons------------/obj/item/ammo_casing/vampire/c12gvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -252,7 +252,7 @@
 	name = "automatic pistol magazine (.45 ACP HP)"
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp/HP
 
-/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23/socom
+/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom
 	name = "\improper Mark 23 SOCOM Pistol"
 	desc = "A specialized .45 ACP Pistol featuring an integrated supressor and laser sight"
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
@@ -260,7 +260,7 @@
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
 	icon_state = "mk23"
-	onflooricon_state = "mk23"
+	//onflooricon_state = "mk23"
 	inhand_icon_state = "mk23"
 	w_class = WEIGHT_CLASS_SMALL
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/mk23
