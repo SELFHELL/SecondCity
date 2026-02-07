@@ -22,7 +22,7 @@
 
 
 /obj/item/clothing/shoes/darkpack/firstteam
-	name = "first-team boots"
+	name = "\improper First team boots"
 	desc = "Pitch-black boots with hard, industrial laces."
 	icon_state = "ftboots"
 	armor_type = /datum/armor/shoes_jackboots
@@ -32,7 +32,7 @@
 /obj/item/clothing/gloves/darkpack
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "ftgloves"
 	undyeable = TRUE
 
@@ -51,10 +51,10 @@
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	inhand_icon_state = null
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 
 /obj/item/clothing/head/darkpack/firstteam_helmet
-	name = "First Team helmet"
+	name = "\improper First Team helmet"
 	desc = "A black helmet with two, green-glowing eye-pieces that seem to stare through your soul."
 	icon_state = "fthelmet"
 	armor_type = /datum/armor/first_team
@@ -65,11 +65,11 @@
 
 //------------ARMOR------------
 
-/obj/item/clothing/suit/darkpack
+/obj/item/clothing/suit/vampire/response
 	icon_state = "ftuni"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	inhand_icon_state = null
 
 	body_parts_covered = CHEST
@@ -86,7 +86,7 @@
 
 
 /obj/item/clothing/suit/darkpack/firstteam_armor
-	name = "First Team Armoured Vest"
+	name = "\improper First Team Armoured Vest"
 	desc = "A strong looking, armoured-vest with a large '1' engraved onto the breast."
 	icon_state = "ftarmor"
 	inhand_icon_state = null
@@ -99,7 +99,7 @@
 //------------SUIT------------
 
 /obj/item/clothing/under/darkpack
-	name = "First Team uniform"
+	name = "\improper First Team uniform"
 	desc = "A completely blacked out uniform with a large '1' symbol sewn onto the shoulder-pad."
 	icon_state = "ftuni"
 	has_sensor = NO_SENSORS
@@ -107,7 +107,7 @@
 	can_adjust = FALSE
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 
 
 /obj/item/clothing/under/response/Initialize()
@@ -129,7 +129,7 @@
 /obj/item/ammo_box/darkpack/c556/bale //DONT EVER PUT THIS IN A MAP
 	name = "balefire ammo box (5.56)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "556box-bale"
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
 
@@ -139,7 +139,7 @@
 	caliber = CALIBER_556
 	projectile_type = /obj/projectile/bullet/darkpack/vamp556mm/bale
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "b556"
 	base_icon_state = "b556"
 
@@ -176,7 +176,7 @@
 	caliber = CALIBER_SHOTGUN
 	projectile_type = /obj/projectile/bullet/darkpack/f12g
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "f12"
 	base_icon_state = "f12"
 
@@ -201,7 +201,7 @@
 	max_ammo = 40
 
 /obj/item/ammo_box/magazine/px66f
-	name = "PX66F magazine (5.56mm)"
+	name = "\improper PX66F magazine (5.56mm)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
@@ -214,7 +214,7 @@
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
 /obj/item/ammo_box/magazine/darkpack/px249f
-	name = "PX249F box magazine (5.56mm)"
+	name = "\improper PX249F box magazine (5.56mm)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
@@ -234,7 +234,7 @@
 	masquerade_violating = FALSE
 
 /obj/item/ammo_box/magazine/darkpack/mk23
-	name = "automatic pistol magazine (.45 ACP)"
+	name = "\improper automatic pistol magazine (.45 ACP)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	inhand_icon_state = null
@@ -258,7 +258,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "mk23"
 	//onflooricon_state = "mk23"
 	inhand_icon_state = "mk23"
@@ -281,7 +281,7 @@
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_guns.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "px66f"
 	inhand_icon_state = "px66f"
 	worn_icon_state = "rifle"
@@ -309,7 +309,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_guns.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
@@ -323,7 +323,6 @@
 	fire_sound = 'modular_darkpack/modules/ert/audio/shotgun_firing.ogg'
 	load_sound = 'modular_darkpack/modules/ert/audio/shell_load.ogg'
 	rack_sound = 'modular_darkpack/modules/ert/audio/cycling.ogg'
-	recoil = 4
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
 
@@ -334,7 +333,7 @@
 	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
-	onflooricon = 'modular_darkpack/modules/ert/icons/onfloor.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 	icon_state = "px249f"
 	inhand_icon_state = "px249f"
 	base_icon_state = "px249f"
@@ -346,6 +345,7 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/px249f
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
+	recoil = 1 //Given the RPM, you REALLY dont want this high
 	spread = 6
 	fire_sound = 'modular_darkpack/modules/ert/audio/m249fire.ogg'
 	rack_sound = 'modular_darkpack/modules/ert/audio/m249rack.ogg'
