@@ -1,20 +1,20 @@
 /datum/outfit/job/vampire/ert/pentex
 	name = "First Team Leader"
 	ears = /obj/item/radio/headset/darkpack/pmc
-	uniform = /obj/item/clothing/under/darkpack/firstteam_uniform
-	gloves = /obj/item/clothing/gloves/darkpack/firstteam
+	uniform = /obj/item/clothing/under/vampire/darkpack_ert/firstteam_uniform
+	gloves = /obj/item/clothing/gloves/vampire/darkpack_ert/firstteam
 	mask = /obj/item/clothing/mask/vampire/balaclava
 	glasses = /obj/item/clothing/glasses/night/thermal
 	r_pocket = /obj/item/flashlight
-	l_pocket = /obj/item/ammo_box/magazine/px66f
-	shoes = /obj/item/clothing/shoes/darkpack/firstteam
+	l_pocket = /obj/item/ammo_box/magazine/darkpack/px66f
+	shoes = /obj/item/clothing/shoes/vampire/darkpack_ert/firstteam
 	belt = /obj/item/gun/ballistic/automatic/darkpack/px66f
-	suit = /obj/item/clothing/suit/darkpack/firstteam_armor
-	head = /obj/item/clothing/head/darkpack/firstteam_helmet
+	suit = /obj/item/clothing/suit/vampire/darkpack_ert/firstteam_armor
+	head = /obj/item/clothing/head/vampire/darkpack_ert/firstteam_helmet
 	back = /obj/item/storage/backpack/satchel
 	implants = list(/obj/item/implant/explosive)
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/px66f = 3,
+		/obj/item/ammo_box/magazine/darkpack/px66f = 3,
 		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/silver = 2,
 		/obj/item/ammo_box/darkpack/c556/bale = 1,
@@ -41,7 +41,7 @@
 	belt = /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom
 	r_hand = /obj/item/gun/ballistic/shotgun/darkpack/px12r
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/px66f = 3,
+		/obj/item/ammo_box/magazine/darkpack/px66f = 3,
 		/obj/item/ammo_box/magazine/darkpack/mk23/silver = 2,
 		/obj/item/ammo_box/darkpack/f12g = 2,
 		/obj/item/vamp/keys/pentex = 1,
@@ -53,7 +53,7 @@
 	name = "First Team Medic"
 	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/px66f = 3,
+		/obj/item/ammo_box/magazine/darkpack/px66f = 3,
 		/obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom=1,
 		/obj/item/ammo_box/magazine/darkpack/mk23/silver = 2,
 		/obj/item/ammo_box/darkpack/c556/bale = 1,

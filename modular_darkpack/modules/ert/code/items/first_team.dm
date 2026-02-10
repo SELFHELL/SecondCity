@@ -10,7 +10,7 @@
 	wound = 70
 
 //------------SHOES------------
-/obj/item/clothing/shoes/darkpack
+/obj/item/clothing/shoes/vampire/darkpack_ert
 	name = "shoes"
 	desc = "Comfortable-looking shoes."
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
@@ -21,7 +21,7 @@
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 
 
-/obj/item/clothing/shoes/darkpack/firstteam
+/obj/item/clothing/shoes/vampire/darkpack_ert/firstteam
 	name = "\improper First team boots"
 	desc = "Pitch-black boots with hard, industrial laces."
 	icon_state = "ftboots"
@@ -29,7 +29,7 @@
 
 //------------GLOVES------------
 
-/obj/item/clothing/gloves/darkpack
+/obj/item/clothing/gloves/vampire/darkpack_ert
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
@@ -37,7 +37,7 @@
 	undyeable = TRUE
 
 
-/obj/item/clothing/gloves/darkpack/firstteam
+/obj/item/clothing/gloves/vampire/darkpack_ert/firstteam
 	name = "\improper First Team gloves"
 	desc = "Provides protection from the good, the bad and the ugly."
 	icon_state = "ftgloves"
@@ -46,14 +46,14 @@
 
 //------------HELMET------------
 
-/obj/item/clothing/head/darkpack
+/obj/item/clothing/head/vampire/darkpack_ert
 	icon_state = "fthelmet"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	inhand_icon_state = null
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 
-/obj/item/clothing/head/darkpack/firstteam_helmet
+/obj/item/clothing/head/vampire/darkpack_ert/firstteam_helmet
 	name = "\improper First Team helmet"
 	desc = "A black helmet with two, green-glowing eye-pieces that seem to stare through your soul."
 	icon_state = "fthelmet"
@@ -65,7 +65,7 @@
 
 //------------ARMOR------------
 
-/obj/item/clothing/suit/vampire/response
+/obj/item/clothing/suit/vampire/darkpack_ert
 	icon_state = "ftuni"
 	icon = 'modular_darkpack/modules/ert/icons/clothing.dmi'
 	worn_icon = 'modular_darkpack/modules/ert/icons/worn.dmi'
@@ -80,12 +80,12 @@
 	max_integrity = 250
 	resistance_flags = NONE
 
-/obj/item/clothing/suit/darkpack/Initialize()
+/obj/item/clothing/suit/vampire/darkpack_ert/Initialize()
 	. = ..()
 	AddComponent(/datum/component/selling, 200, "suit", FALSE)
 
 
-/obj/item/clothing/suit/darkpack/firstteam_armor
+/obj/item/clothing/suit/vampire/darkpack_ert/firstteam_armor
 	name = "\improper First Team Armoured Vest"
 	desc = "A strong looking, armoured-vest with a large '1' engraved onto the breast."
 	icon_state = "ftarmor"
@@ -98,7 +98,7 @@
 
 //------------SUIT------------
 
-/obj/item/clothing/under/darkpack
+/obj/item/clothing/under/vampire/darkpack_ert
 	name = "\improper First Team uniform"
 	desc = "A completely blacked out uniform with a large '1' symbol sewn onto the shoulder-pad."
 	icon_state = "ftuni"
@@ -110,11 +110,11 @@
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
 
 
-/obj/item/clothing/under/response/Initialize()
+/obj/item/clothing/under/vampire/darkpack_ert/Initialize()
 	. = ..()
 	AddComponent(/datum/component/selling, 100, "undersuit", FALSE)
 
-/obj/item/clothing/under/darkpack/firstteam_uniform
+/obj/item/clothing/under/vampire/darkpack_ert/firstteam_uniform
 	name = "First Team uniform"
 	desc = "A completely blacked out uniform with a large '1' symbol sewn onto the shoulder-pad."
 	icon_state = "ftuni"
@@ -136,7 +136,7 @@
 /obj/item/ammo_casing/vampire/c556mm/bale
 	name = "green 5.56mm bullet casing"
 	desc = "A modified 5.56mm bullet casing."
-	caliber = CALIBER_556
+	caliber = CALIBER_556NATO
 	projectile_type = /obj/projectile/bullet/darkpack/vamp556mm/bale
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
@@ -200,7 +200,7 @@
 	ammo_type = /obj/item/ammo_casing/vampire/c12g/f12g
 	max_ammo = 40
 
-/obj/item/ammo_box/magazine/px66f
+/obj/item/ammo_box/magazine/darkpack/px66f
 	name = "\improper PX66F magazine (5.56mm)"
 	icon = 'modular_darkpack/modules/ert/icons/ammo.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
@@ -209,7 +209,7 @@
 	icon_state = "px66f"
 	inhand_icon_state = null
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
-	caliber = CALIBER_556
+	caliber = CALIBER_556NATO
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
@@ -222,7 +222,7 @@
 	inhand_icon_state = null
 	icon_state = "px249f"
 	ammo_type = /obj/item/ammo_casing/vampire/c556mm/bale
-	caliber = CALIBER_556
+	caliber = CALIBER_556NATO
 	max_ammo = 200
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
@@ -287,7 +287,7 @@
 	worn_icon_state = "rifle"
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM //Bullpup makes it easy to fire with one hand, but we still don't want these dual-wielded
-	accepted_magazine_type = /obj/item/ammo_box/magazine/px66f
+	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/px66f
 	burst_size = 3
 	spread = 2
 	recoil = 1.5
