@@ -158,7 +158,7 @@
 			return
 		H.adjust_blood_pool(-bloodloss)
 		playsound(H, 'modular_darkpack/modules/ert/audio/balefire.ogg', rand(10,15), TRUE)
-		to_chat(H, span_warning("green flames errupt from the bullets impact, boiling your blood"))
+		to_chat(H, span_warning("Green flames errupt from the bullets impact, boiling your blood!"))
 // DARKPACK TODO - GAROU
 /*
 	if(iswerewolf(target) || isgarou(target))
