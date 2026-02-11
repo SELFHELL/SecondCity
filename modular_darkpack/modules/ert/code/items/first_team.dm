@@ -153,7 +153,7 @@
 	if(iskindred(target) || isghoul(target))
 		var/mob/living/carbon/human/H = target
 		if(H.bloodpool == 0)
-			to_chat(H, span_warning("only ash remains in my veins"))
+			to_chat(H, span_warning("Only ash remains in my veins!"))
 			H.apply_damage(20, BURN)
 			return
 		H.adjust_blood_pool(-bloodloss)
