@@ -157,7 +157,7 @@
 			H.apply_damage(20, BURN)
 			return
 		H.adjust_blood_pool(-bloodloss)
-		playsound(H, 'modular_darkpack/modules/ert/audio/balefire.ogg', rand(10,15), TRUE)
+		playsound(H, 'modular_darkpack/modules/ert/sounds/balefire.ogg', rand(10,15), TRUE)
 		to_chat(H, span_warning("Green flames errupt from the bullets impact, boiling your blood!"))
 // DARKPACK TODO - GAROU
 /*
@@ -295,7 +295,7 @@
 	show_bolt_icon = FALSE
 	mag_display = TRUE
 	can_suppress = FALSE
-	fire_sound = 'modular_darkpack/modules/ert/audio/silenced_rifle.ogg'
+	fire_sound = 'modular_darkpack/modules/ert/sounds/silenced_rifle.ogg'
 	masquerade_violating = TRUE
 
 /obj/item/gun/ballistic/automatic/darkpack/px66f/Initialize()
@@ -320,9 +320,9 @@
 	fire_delay = 6
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/px12r
 	can_be_sawn_off	= FALSE
-	fire_sound = 'modular_darkpack/modules/ert/audio/shotgun_firing.ogg'
-	load_sound = 'modular_darkpack/modules/ert/audio/shell_load.ogg'
-	rack_sound = 'modular_darkpack/modules/ert/audio/cycling.ogg'
+	fire_sound = 'modular_darkpack/modules/ert/sounds/shotgun_firing.ogg'
+	load_sound = 'modular_darkpack/modules/ert/sounds/shell_load.ogg'
+	rack_sound = 'modular_darkpack/modules/ert/sounds/cycling.ogg'
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
 
@@ -345,10 +345,10 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack/px249f
 	weapon_weight = WEAPON_HEAVY
 	burst_size = 1
-	recoil = 1 //Given the RPM, you REALLY dont want this high
+	recoil = 6 //With good firearm skill it's not an issue
 	spread = 6
-	fire_sound = 'modular_darkpack/modules/ert/audio/m249fire.ogg'
-	rack_sound = 'modular_darkpack/modules/ert/audio/m249rack.ogg'
+	fire_sound = 'modular_darkpack/modules/ert/sounds/m249fire.ogg'
+	rack_sound = 'modular_darkpack/modules/ert/sounds/m249rack.ogg'
 
 /obj/item/gun/ballistic/automatic/l6_saw/darkpack/update_icon_state()
 	. = ..()
