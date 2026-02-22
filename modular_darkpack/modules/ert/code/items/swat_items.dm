@@ -56,7 +56,7 @@
 
 /obj/item/clothing/head/vampire/darkpack_ert/swat_helmet
 	name = "\improper SWAT Helmet"
-	desc = "Modified SFPD Helmet with improved performance. Isnt it great to be on the good side of Police Militarization?"
+	desc = "Modified SFPD helmet with improved performance. Isnt it great to be on the good side of police militarization?"
 	icon_state = "swathelmet"
 	armor_type = /datum/armor/army_helmet
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
