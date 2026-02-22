@@ -44,7 +44,7 @@
 
 /obj/item/clothing/suit/vampire/darkpack_ert/swat_armor
 	name = "\improper SWAT vest"
-	desc = "Highly protective vest marked for SWAT Usage. Make sure to throw the flashbang BEFORE you breach the room."
+	desc = "Highly protective vest marked for SWAT usage. Make sure to throw the flashbang BEFORE you breach the room."
 	icon_state = "swatvest"
 	inhand_icon_state = null
 	w_class = WEIGHT_CLASS_BULKY
