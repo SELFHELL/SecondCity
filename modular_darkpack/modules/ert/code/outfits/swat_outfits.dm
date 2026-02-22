@@ -24,7 +24,7 @@
 	name = "Swat Lieutenant"
 	ears = /obj/item/radio/headset/darkpack/police
 	glasses = /obj/item/clothing/glasses/vampire/sun
-	uniform = /obj/item/clothing/under/vampire/police/utility
+	uniform = /obj/item/clothing/under/vampire/police/turtleneck
 	gloves = /obj/item/clothing/gloves/fingerless
 	l_pocket = /obj/item/vamp/keys/police/secure/captain
 	suit_store = /obj/item/flashlight/seclite
