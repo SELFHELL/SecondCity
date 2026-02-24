@@ -313,7 +313,7 @@
 	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	fire_sound = 'modular_darkpack/modules/weapons/sounds/mac10.ogg' // DARKPACK sound effect
 	serial_type = "GBI"
-	var/rof = 0.05 SECONDS //1200 RPM, if any other gun has the same fire rate as this gun, increase this gun so its the new fastest
+	var/rof = 0.055 SECONDS //1090 RPM, if any other gun has the same fire rate as this gun, increase this gun so its the new fastest
 
 /obj/item/gun/ballistic/automatic/darkpack/mac10/Initialize(mapload)
 	. = ..()
