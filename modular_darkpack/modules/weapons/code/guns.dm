@@ -268,7 +268,7 @@
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
 	inhand_icon_state = "mp5"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack9mp5
-	burst_size = 4
+	burst_size = 1
 	spread = 4
 	recoil = 3
 	bolt_type = BOLT_TYPE_LOCKING
@@ -277,7 +277,7 @@
 	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	fire_sound = 'modular_darkpack/modules/deprecated/sounds/mp5.ogg'
 	serial_type = "H&K"
-	var/rof = 0.08 SECONDS //750 RPM
+	var/rof = 0.15 SECONDS
 
 /obj/item/gun/ballistic/automatic/darkpack/mp5/Initialize(mapload)
 	. = ..()
@@ -381,7 +381,7 @@
 	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	fire_sound = 'modular_darkpack/modules/deprecated/sounds/mp5.ogg'
 	serial_type = "H&K"
-	var/rof = 0.07 SECONDS //860~ RPM,
+	var/rof = 0.1 SECONDS //600 RPM,
 
 /obj/item/gun/ballistic/automatic/darkpack/mp7/Initialize(mapload)
 	. = ..()
@@ -477,7 +477,7 @@
 	fire_sound = 'modular_darkpack/modules/deprecated/sounds/ak.ogg'
 	masquerade_violating = TRUE
 	serial_type = "KA"
-	var/rof = 0.15 SECONDS //400 RPM
+	var/rof = 0.2 SECONDS //300 RPM
 
 /obj/item/gun/ballistic/automatic/darkpack/ak74/Initialize(mapload)
 	. = ..()
@@ -543,7 +543,7 @@
 	fire_sound = 'modular_darkpack/modules/deprecated/sounds/thompson.ogg'
 	masquerade_violating = TRUE
 	serial_type = "AO"
-	var/rof = 0.1 SECONDS //600 RPM
+	var/rof = 0.15 SECONDS //400 RPM
 
 /obj/item/gun/ballistic/automatic/darkpack/thompson/Initialize(mapload)
 	. = ..()
