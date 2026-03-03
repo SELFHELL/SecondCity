@@ -7,7 +7,7 @@
 	r_pocket = /obj/item/flashlight/seclite
 	l_pocket = /obj/item/vamp/keys/police/federal
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
-	suit = /obj/item/clothing/suit/vampire/vest
+	suit = /obj/item/clothing/suit/vampire/darkpack_ert/guard_vest
 	id = /obj/item/card/lieutenant
 	r_hand = /obj/item/gun/ballistic/automatic/darkpack/autoshotgun
 	backpack_contents = list(
@@ -16,6 +16,7 @@
 		/obj/item/knife/vamp = 1,
 		/obj/item/storage/medkit/darkpack/ifak = 1,
 		/obj/item/megaphone = 1,
+		/obj/item/clothing/mask/gas/darkpack_ert/guard_mask = 1,
 	)
 
 /datum/outfit/job/vampire/ert/national_guard/medic
@@ -29,7 +30,8 @@
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	belt = /obj/item/defibrillator/compact/loaded
 	suit = /obj/item/clothing/suit/vampire/labcoat/director
-	head = /obj/item/clothing/head/beret
+	head = /obj/item/clothing/head/vampire/darkpack_ert/guard_helmet
+	mask = /obj/item/clothing/mask/gas/darkpack_ert/guard_mask
 	id = /obj/item/card/first_aid
 	r_hand = /obj/item/gun/ballistic/automatic/darkpack/mp5
 	backpack_contents = list(
@@ -50,8 +52,9 @@
 	l_pocket = /obj/item/ammo_box/magazine/darkpackaug
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
 	belt = /obj/item/gun/ballistic/automatic/darkpack/aug
-	suit = /obj/item/clothing/suit/vampire/vest/army
-	head = /obj/item/clothing/head/vampire/army
+	mask = /obj/item/clothing/mask/gas/darkpack_ert/guard_mask
+	suit = /obj/item/clothing/suit/vampire/darkpack_ert/guard_vest
+	head = /obj/item/clothing/head/vampire/darkpack_ert/guard_helmet
 	id = /obj/item/card/swat
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/darkpackaug = 1,
@@ -68,6 +71,7 @@
 	gloves = /obj/item/clothing/gloves/vampire/work
 	r_pocket = /obj/item/lighter
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
+	mask = /obj/item/clothing/mask/gas/darkpack_ert/guard_mask
 	suit = /obj/item/clothing/suit/vampire/eod
 	head = /obj/item/clothing/head/vampire/eod
 	id = /obj/item/card/swat
@@ -90,8 +94,9 @@
 	r_pocket = /obj/item/flashlight/seclite
 	l_pocket = /obj/item/ammo_box/magazine/m9mm
 	shoes = /obj/item/clothing/shoes/vampire/jackboots
-	suit = /obj/item/clothing/suit/vampire/vest/army
+	suit = /obj/item/clothing/suit/vampire/darkpack_ert/guard_vest
 	head = /obj/item/clothing/head/beret
+	mask = /obj/item/clothing/mask/gas/darkpack_ert/guard_mask
 	id = /obj/item/card/swat
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/darkpack556 = 1,
