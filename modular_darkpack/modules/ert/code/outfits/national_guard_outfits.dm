@@ -10,6 +10,7 @@
 	suit = /obj/item/clothing/suit/vampire/darkpack_ert/guard_vest
 	id = /obj/item/card/lieutenant
 	r_hand = /obj/item/gun/ballistic/automatic/darkpack/autoshotgun
+	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/darkpackautoshot = 1,
 		/obj/item/ammo_box/darkpack/c12g/buck = 1,
@@ -34,6 +35,7 @@
 	mask = /obj/item/clothing/mask/gas/darkpack_ert/guard_mask
 	id = /obj/item/card/first_aid
 	r_hand = /obj/item/gun/ballistic/automatic/darkpack/mp5
+	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/darkpack9mp5 = 1,
 		/obj/item/storage/medkit/darkpack/doctor = 1,
@@ -56,6 +58,7 @@
 	suit = /obj/item/clothing/suit/vampire/darkpack_ert/guard_vest
 	head = /obj/item/clothing/head/vampire/darkpack_ert/guard_helmet
 	id = /obj/item/card/swat
+	back = /obj/item/storage/backpack/satchel
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/darkpackaug = 1,
 		/obj/item/grenade/frag = 1,
