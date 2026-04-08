@@ -148,7 +148,7 @@
 	damage = 45
 	var/bloodloss = 1
 
-/obj/projectile/bullet/darkpack/vamp556mm/bale/on_hit(atom/target, blocked = 0, pierce_hit)
+/obj/projectile/bullet/darkpack/vamp556mm/bale/on_hit(mob/living/carbon/target, blocked = 0, pierce_hit)
 	. = ..()
 	if(get_kindred_splat(target) || get_ghoul_splat(target))
 		var/mob/living/carbon/human/H = target
@@ -255,7 +255,7 @@
 /obj/item/gun/ballistic/automatic/pistol/darkpack/mk23_socom
 	name = "\improper Mark 23 SOCOM Pistol"
 	desc = "A specialized .45 ACP Pistol featuring an integrated supressor and laser sight"
-	icon = 'modular_darkpack/modules/ert/icons/48x32weapons.dmi'
+	icon = 'modular_darkpack/modules/ert/icons/64x32weapons.dmi'
 	lefthand_file = 'modular_darkpack/modules/ert/icons/righthand.dmi'
 	righthand_file = 'modular_darkpack/modules/ert/icons/lefthand.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/ert/icons/onfloor.dmi')
