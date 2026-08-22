@@ -805,6 +805,8 @@
 	w_class = WEIGHT_CLASS_NORMAL	//Lets you stow it in a bag
 	weapon_weight = WEAPON_MEDIUM	//Lets you one-hand it on sawing.
 
+/obj/item/gun/ballistic/shotgun/vampire/remington
+
 /obj/item/ammo_box/magazine/darkpackautoshot
 	name = "shotgun magazine (12ga)"
 	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
